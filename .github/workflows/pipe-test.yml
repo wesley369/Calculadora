@@ -1,0 +1,27 @@
+name: execução dos testes unitários com jest
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+
+
+    steps:
+   -  name: Checkout do Repositório
+      uses: actions/checkoutg@v4
+
+    - name: configurar node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: instalar dependencias
+      run: npm install
+
+    - name: executar testes
+      run: npm run test
