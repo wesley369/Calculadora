@@ -12,7 +12,7 @@ jobs:
 
 
     steps:
-   -  name: Checkout do Repositório
+    - name: Checkout do Repositório
       uses: actions/checkout@v4
 
     - name: configurar node.js
