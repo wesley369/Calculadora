@@ -13,7 +13,7 @@ jobs:
 
     steps:
    -  name: Checkout do Repositório
-      uses: actions/checkoutg@v4
+      uses: actions/checkout@v4
 
     - name: configurar node.js
       uses: actions/setup-node@v3
